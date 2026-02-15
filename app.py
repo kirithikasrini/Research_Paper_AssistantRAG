@@ -5,7 +5,7 @@ import tempfile
 from rag_pipeline import create_vectorstore, create_qa_chain
 
 
-st.title("📚 Research Paper Assistant (RAG - Free Version)")
+st.title("📚 Research Paper Assistant (RAG)")
 
 uploaded_file = st.file_uploader("Upload Research Paper", type="pdf")
 
