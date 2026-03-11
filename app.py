@@ -20,7 +20,8 @@ if uploaded_file:
 
     # Create vectorstore
     with st.spinner("Processing PDF..."):
-        vectorstore = create_vectorstore(pdf_path)
+        file_id = f"{uploaded_file.name}_{uploaded_file.size}"
+        vectorstore = create_vectorstore(pdf_path, file_id)
 
     # Create QA chain
     with st.spinner("Loading AI Model (this might take a moment)..."):
